@@ -7,8 +7,7 @@ import numpy as np
 
 from collections import defaultdict
 
-from .base import *
-from .query import *
+from .query import generate_query, load_question, load_questions_from_file
 
 
 def reuse(query_log):

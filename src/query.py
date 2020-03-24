@@ -6,8 +6,6 @@ import random
 
 from collections import defaultdict
 
-from .base import *
-
 
 """All questions are assumed to be JSON following the format
 outlined by the paper:

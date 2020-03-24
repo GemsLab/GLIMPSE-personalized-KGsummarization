@@ -1,11 +1,12 @@
 import random
 
+import numpy as np
+
 from operator import itemgetter
 from collections import defaultdict
 
-from .algorithms import *
-from .base import *
-from .heap import *
+from .base import KnowledgeGraph
+from .heap import Heap
 
 
 class Summary(KnowledgeGraph):
