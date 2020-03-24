@@ -36,7 +36,7 @@ In our experiments we used the following datasets:
 Note that the code to read in each knowledge graph expects ``.gz`` files, so you should gzip the raw data dumps as necessary.
 
 In lines 13-15 of ``base.py``, change the paths to each dataset to your local data directories. 
-Each subclass of ``KnowledgeGraph`` also has several keyword arguments:
+Each subclass of ``KnowledgeGraph`` also has several keyword arguments, which you may need to change according to your directory structure and file naming conventions:
 
 - ``rdf_gz``: The filename of the data dump in gzip format. 
 - ``query_dir``: The subdirectory where generated queries are saved and retrieved in json format (see below).
@@ -45,20 +45,21 @@ Each subclass of ``KnowledgeGraph`` also has several keyword arguments:
 
 Here's an example of how queries might be stored according to this subdirectory structure:
 ```
-<by_topic>/
-    art.list
-    music.list
-    geography.list
-<by_mid>/
-    m934sk.list
-    g104n1.list
-    m10394.list
-<query_dir>/
-    q1.json
-    q2.json
-    q3.json
-    q4.json
-    q5.json
+<kg_data_dir>/
+  <by_topic>/
+      art.list
+      music.list
+      geography.list
+  <by_mid>/
+      m934sk.list
+      g104n1.list
+      m10394.list
+  <query_dir>/
+      q1.json
+      q2.json
+      q3.json
+      q4.json
+      q5.json
 ```
 Now, assuming that queries q1 and q3 are about "art", the ``art.list`` file should look like this:
 ```
