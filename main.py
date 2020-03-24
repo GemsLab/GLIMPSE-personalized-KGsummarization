@@ -9,7 +9,7 @@ from time import time
 from sklearn.model_selection import train_test_split
 
 from src.base import YAGO, DBPedia, Freebase
-from src.user import query_log_by_mids
+from src.user import query_log_by_mids, query_log_by_topics
 from src.glimpse import SummaryMethod, GLIMPSE
 from src.metrics import total_query_log_metrics, average_query_log_metrics
 
