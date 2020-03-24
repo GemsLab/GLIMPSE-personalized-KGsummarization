@@ -15,13 +15,14 @@ from src.metrics import total_query_log_metrics, average_query_log_metrics
 
 
 # Available choices for user input arguments in main
+# TODO: Change these to point to your local data directories
 KG_MAPPING = {
     'YAGO': YAGO(query_dir='queries/final/', mid_dir='queries/by-mid/'),
     'Freebase': Freebase(query_dir='queries/final/'),
     'DBPedia': DBPedia()
 }
 
-METHODS = { # choices from src/summarize/offline.py
+METHODS = {
     'glimpse': SummaryMethod(GLIMPSE, 'GLIMPSE'),
     'glimpse-2': SummaryMethod(GLIMPSE, 'GLIMPSE-2', power=2),
 }
