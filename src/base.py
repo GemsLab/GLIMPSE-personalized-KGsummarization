@@ -237,6 +237,12 @@ class KnowledgeGraph(object):
     def query_dir(self):
         raise NotImplementedError
 
+    def topic_dir(self):
+        raise NotImplementedError
+
+    def mid_dir(self):
+        raise NotImplementedError
+
     def topics(self):
         raise NotImplementedError
 
