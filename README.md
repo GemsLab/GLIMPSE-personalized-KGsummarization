@@ -5,6 +5,8 @@ This is a reference implementation for our IEEE ICDM 2019 paper:
 > Personalized Knowledge Graph Summarization: From the Cloud to Your Pocket.
   Tara Safavi, Caleb Belth, Lukas Faber, Davide Mottin, Emmanuel Muller, Danai Koutra.
   IEEE International Conference on Data Mining (ICDM), 2019
+
+*Link*: https://gemslab.github.io/papers/safavi-2019-glimpse.pdf
   
 If you use it, please cite the following: 
 ```
