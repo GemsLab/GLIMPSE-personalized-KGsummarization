@@ -1,4 +1,4 @@
-# glimpse-summary
+# GLIMPSE: Personalized Knowledge Graph Summarization
 
 This is a reference implementation for our IEEE ICDM 2019 paper:
 
